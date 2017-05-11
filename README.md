@@ -13,7 +13,7 @@
 Hopefully best practices in Node.js.
 
 ## When to use Node.js
-API's or something that consists of small chunks of work which are non-blocking.
+API's or something that consists of small chunks of work per request which is non-blocking.
 
 ## When NOT to use Node.js
 When heavy work has to be done. Node.js is a single thread which handels ALL requests. If one (or more) request creates much CPU work or something that blocks, ALL other requests are blocked to!
@@ -32,3 +32,16 @@ fs.readFile('/file.md', (err, data) => {
    if (err) throw err;
 });
 ```
+
+## Some of the most popular npm modules
+`express` — Express.js, a Sinatra-inspired web development framework for Node.js, and the de-facto standard for the majority of Node.js applications out there today.
+`hapi` — a very modular and simple to use configuration-centric framework for building web and services applications
+`connect` — Connect is an extensible HTTP server framework for Node.js, providing a collection of high performance “plugins” known as middleware; serves as a base foundation for Express.
+`socket.io` and sockjs — Server-side component of the two most common websockets components out there today.
+`pug` (formerly Jade) — One of the popular templating engines, inspired by HAML, a default in Express.js.
+`mongodb` and `mongojs` — MongoDB wrappers to provide the API for MongoDB object databases in Node.js.
+`redis` — Redis client library.
+`lodash` (underscore, lazy.js) — The JavaScript utility belt. Underscore initiated the game, but got overthrown by one of its two counterparts, mainly due to better performance and modular implementation.
+`forever` — Probably the most common utility for ensuring that a given node script runs continuously. Keeps your Node.js process up in production in the face of any unexpected failures.
+`bluebird` — A full featured Promises/A+ implementation with exceptionally good performance
+`moment` — A lightweight JavaScript date library for parsing, validating, manipulating, and formatting dates.
