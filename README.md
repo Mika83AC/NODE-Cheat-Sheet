@@ -3,17 +3,21 @@
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
 - [NODE-Cheat-Sheet](#node-cheat-sheet)
+  - [What is Node.js](#what-is-nodejs)
   - [When to use Node.js](#when-to-use-nodejs)
   - [When NOT to use Node.js](#when-not-to-use-nodejs)
   - [Always be non-blocking](#always-be-non-blocking)
   - [Some of the most popular npm modules](#some-of-the-most-popular-npm-modules)
-  - [SQL and node](#sql-and-node)
+  - [SQL and Node.js](#sql-and-nodejs)
   - [Links](#links)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 # NODE-Cheat-Sheet
 Hopefully best practices in Node.js.
+
+## What is Node.js
+It's very fast and scaling if used correctly, and can get really frsutrating if used wrong.
 
 ## When to use Node.js
 API's or something that consists of small chunks of work per request which is non-blocking.
@@ -63,8 +67,14 @@ fs.readFile('/file.md', (err, data) => {
 
 `moment` — A lightweight JavaScript date library for parsing, validating, manipulating, and formatting dates.
 
-## SQL and node
+## SQL and Node.js
+In general, Node.js isn't seen as a good bundle for relational databases.
+
 `sequelize` - An easy-to-use multi SQL dialect ORM for Node.js (http://www.sequelizejs.com)
 
 ## Links
 https://medium.com/the-node-js-collection/why-the-hell-would-you-use-node-js-4b053b94ab8e
+
+http://nodeguide.com/convincing_the_boss.html
+
+https://medium.com/the-node-js-collection/10-best-practices-for-writing-node-js-rest-apis-7643a7765cd
